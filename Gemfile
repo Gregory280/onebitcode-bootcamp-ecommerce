@@ -16,6 +16,8 @@ gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth', branch: 'm
 #CORS
 gem 'rack-cors', '~> 1.1.1'
 
+#Rendering
+gem 'jbuilder', '~> 2.10.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
