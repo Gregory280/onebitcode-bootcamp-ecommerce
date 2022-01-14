@@ -1,8 +1,12 @@
 module Admin::V1
   class CategoriesController < ApiController
-    before_action :load_category, only: [:update, :destroy]
+    before_action :load_category, only: [:update, :destroy, :show]
     def index
-      @categories = Category.all
+      @categories = load_categories
+    end
+
+    def show
+
     end
 
     def create
@@ -26,6 +30,11 @@ module Admin::V1
 
     def load_category
       @category = Category.find(params[:id])
+    end
+
+    def load_categories
+      permitted = params.permit({ search: :name }, { order: {} }, :page, :length)
+      Admin::ModelLoadingService.new(Category.all, permitted).call
     end
 
     def category_params
