@@ -4,6 +4,6 @@ class Coupon < ApplicationRecord
   enum status: { active: 1, inactive: 2 }
   validates :discount_value, presence: true, numericality: { greater_than: 0 }
   validates :due_date, presence: true, future_date: true
-  
+  include LikeSearchable
   include Paginatable
 end

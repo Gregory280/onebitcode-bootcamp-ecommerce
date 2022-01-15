@@ -12,6 +12,6 @@ RSpec.describe Category, type: :model do
     it { is_expected.to validate_uniqueness_of(:name).case_insensitive }
   end
 
-  it_behaves_like "name searchable concern", :category
+  it_has_behavior_of "like searchable concern", :category, :name
   it_behaves_like "paginatable concern", :category
 end

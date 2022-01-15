@@ -17,9 +17,9 @@ class Samples
     end
     def self.video_board
       [
-        'Radeon RX 550 2 GB', 'Geforce GTX 1050 Ti 4 GB ', 'GeForce GTX 1650 4 GB',
-        'ATI Radeon RX 580 8 GB', 'Geforce GTX 1660 Super 6 GB', 'Geforce RTX 2060 6 GB',
-        'Geforce RTX 2080 Super 8 GB', 'AMD Radeon RX 6800 16 GB', 'Geforce RTX 3080 10 GB'
+        'Radeon RX 550 2 GB', 'GTX 1050 Ti 4 GB ', 'GTX 1650 4 GB',
+        'ATI Radeon RX 580 8 GB', 'GTX 1660 Super 6 GB', 'RTX 2060 6 GB',
+        'RTX 2080 Super 8 GB', 'AMD Radeon RX 6800 16 GB', 'RTX 3080 10 GB'
       ].sample
     end
   end
