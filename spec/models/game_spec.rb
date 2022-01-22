@@ -12,4 +12,7 @@ RSpec.describe Game, type: :model do
   describe "associations" do
     it { is_expected.to have_one(:product) }
   end
+
+  it_has_behavior_of "like searchable concern", :game, :developer
+
 end

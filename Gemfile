@@ -9,6 +9,7 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'bootsnap', '>= 1.4.2', require: false
+gem 'rails-i18n'
 
 #Auth
 gem 'devise_token_auth', github: 'lynndylanhurley/devise_token_auth', branch: 'master'
